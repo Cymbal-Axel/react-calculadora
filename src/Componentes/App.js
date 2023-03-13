@@ -1,12 +1,21 @@
-import Display from "./Display";
-import PanelDeBotones from "./PanelDeBotones";
+import Display from "./Display.js";
+import PanelDeBotones from "./PanelDeBotones.js";
 import {Component} from "react";
 
-class App extends Component() {
+class App extends Component {
+
+  state = {
+    total: null,
+    siguiente: null,
+    operador: null
+
+  }
+
   render(){
     return (
       <div className="App">
-        <p>todo va bien!</p>
+        <Display value={this.state.siguiente || this.state.total || "0"}/>
+        <PanelDeBotones />
       </div>
     );
   }
