@@ -30,6 +30,11 @@ export default function PanelDeBotones(clickHandle){
                 <Button name="3" clickHandle={handleClick}/>
                 <Button name="+" clickHandle={handleClick}/>
             </div>
+            <div>
+                <Button name="0" clickHandle={handleClick}/>
+                <Button name="." clickHandle={handleClick}/>
+                <Button name="=" clickHandle={handleClick}/>
+            </div>
         </div>
     )
 
