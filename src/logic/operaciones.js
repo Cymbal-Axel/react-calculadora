@@ -13,6 +13,7 @@ export default function operaciones (estado, nombreDeBoton) {
     }
 
     if(isNumber(nombreDeBoton)){
+
         if(nombreDeBoton === "0" && estado.siguiente === "0") return {}
 
         if(estado.operador){
@@ -47,6 +48,7 @@ export default function operaciones (estado, nombreDeBoton) {
     }
 
     if(nombreDeBoton === "."){
+
         if(estado.siguiente){
             if(estado.siguiente.include(".")) return {}
 
@@ -56,6 +58,17 @@ export default function operaciones (estado, nombreDeBoton) {
         return {siguiente: "0."}
     }
 
+    if(nombreDeBoton === "="){
+
+        if(estado.siguiente && estado.operador) {
+            return {total: operadores(estado.total, estado.siguiente, estado.operador),
+                    siguiente: null,
+                    operador: null
+                    }
+        }
+
+        return {}
+    }
 
 }
 
