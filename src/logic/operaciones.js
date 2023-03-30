@@ -46,6 +46,16 @@ export default function operaciones (estado, nombreDeBoton) {
         return {}
     }
 
+    if(nombreDeBoton === "."){
+        if(estado.siguiente){
+            if(estado.siguiente.include(".")) return {}
+
+            return {siguiente: estado.siguiente + "."}
+        }
+
+        return {siguiente: "0."}
+    }
+
 
 }
 
