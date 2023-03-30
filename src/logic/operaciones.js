@@ -70,5 +70,14 @@ export default function operaciones (estado, nombreDeBoton) {
         return {}
     }
 
+    if(nombreDeBoton === "+/-") {
+
+        if(estado.siguiente) return {siguiente: (-1 * parseFloat(estado.siguiente).toString())}
+
+        if(estado.total) return {total: (-1 * parseFloat(estado.total).toString())}
+
+        return {}
+    }
+
 }
 
