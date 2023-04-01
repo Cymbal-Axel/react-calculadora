@@ -79,5 +79,22 @@ export default function operaciones (estado, nombreDeBoton) {
         return {}
     }
 
+    if(estado.operador) {
+        return {
+            total: operadores(estado.total, estado.siguiente, estado.operador),
+            siguiente: null,
+            operador: nombreDeBoton
+        }
+    }
+
+    if (!estado.siguiente) return {operador:nombreDeBoton}
+
+    return {
+        total: estado.siguiente,
+        siguiente: null,
+        operador: nombreDeBoton
+    }
+
+
 }
 
