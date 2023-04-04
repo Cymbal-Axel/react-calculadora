@@ -41,10 +41,10 @@ export default function operaciones (estado, nombreDeBoton) {
             return {total: Big(result).div(Big("100").toString()), siguiente: null, operador: null}
         }
 
-        if(estado.siguiente){
+       /* if(estado.siguiente){
             return {siguiente: Big(estado.siguiente).div(Big("100").toString())}
-        }
-        return {}
+        } 
+        return {}*/
     }
 
     if(nombreDeBoton === "."){
