@@ -1,8 +1,8 @@
 import Button from "./Boton";
 
-export default function PanelDeBotones(clickHandle){
+export default function panelDeBotones({clickHandle}){
     
-    const handleClick = nombreDeBoton => clickHandle(nombreDeBoton);
+    const handleClick = nombreDeBoton => {clickHandle(nombreDeBoton)};
 
     return(
         <div>
@@ -16,7 +16,7 @@ export default function PanelDeBotones(clickHandle){
                 <Button name="7" clickHandle={handleClick}/>
                 <Button name="8" clickHandle={handleClick}/>
                 <Button name="9" clickHandle={handleClick}/>
-                <Button name="X" clickHandle={handleClick}/>
+                <Button name="x" clickHandle={handleClick}/>
             </div>
             <div>
                 <Button name="4" clickHandle={handleClick}/>
