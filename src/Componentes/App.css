@@ -1,0 +1,7 @@
+.component-app {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 77hv;
+    padding: 50px 200px;
+}
