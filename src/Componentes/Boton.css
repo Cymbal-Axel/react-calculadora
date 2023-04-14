@@ -25,3 +25,21 @@
     background: #f5923e;
     columns: #fff;
 }
+.component-button.orange button:hover {
+    background: #bf7433;
+}
+.component-button.orange button:hover {
+    background: #5bd035;
+}
+
+.component-button.green button {
+    background: #5f9c4b;
+    columns: #fff;
+}
+.component-button.green button {
+    background: #aaa;
+    columns: #333;
+}
+.component-button.green button:hover {
+    background: #eee;
+}
