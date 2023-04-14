@@ -2,6 +2,7 @@ import Display from "./Display.js";
 import PanelDeBotones from "./PanelDeBotones.js";
 import {Component} from "react";
 import operaciones from "../logic/operaciones.js"
+import "./App.css";
 
 class App extends Component {
 
@@ -16,7 +17,7 @@ class App extends Component {
 
   render(){
     return (
-      <div className="App">
+      <div className="component-app">
         <Display value={this.state.siguiente || this.state.total || "0"}/>
         <PanelDeBotones clickHandle={this.handleClick}/>
       </div>

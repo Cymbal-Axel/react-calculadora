@@ -5,3 +5,8 @@
     padding: 15px 10px;
     width: 100%;
 }
+
+.component-display > div {
+    font-size: 3em;
+    font-weight: bold;
+}
